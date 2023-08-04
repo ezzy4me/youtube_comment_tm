@@ -3,6 +3,10 @@ this is example Coalab code for youtube comment crawling topic modeling.
 
 This project aims to crwal YouTube comments, load them from CSV files, preprocess the data, and conduct Topic Modeling using BERTopic. We conducted on subject 'home alone' youtuber. It primarily includes the following stages:
 
+## preparation!
+- Google colabatory account : https://colab.research.google.com/
+- Google Play Developer API key
+
 ## 0. Crawling youtube data
 
 ## 1. Loading CSV Files
