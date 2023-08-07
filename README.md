@@ -1,5 +1,5 @@
 # YouTube Comments Topic Modeling 🚩
-- [ ] eidtting now.
+- [x] eidtting now.
 - [ ] read me
 - [ ] step1. annotation
 - [ ] step2&3. annotation
