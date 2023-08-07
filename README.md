@@ -35,7 +35,7 @@ We first obtain video information for each youtuber and extract **video IDs** fr
 
 **Please check the code for detailed annotation.**
 
-[^1]: copy all the videos title and URLs from a youtube channel to an excel sheet using softexpert. [Ref](https://www.youtube.com/watch?v=GcjdHWVo3gA)
+[^1]: get all the videos title and URLs from a youtube channel to an excel sheet using softexpert. [Ref](https://www.youtube.com/watch?v=GcjdHWVo3gA)
 
 ## 2. Data Preprocessing
 The data, including YouTube comments stored in CSV format, is loaded from a specified drive path. Comments and titles are further cleaned, masked, and processed. Quantiles are computed for length-based filtering, and the dataset is sampled and concatenated. The final DataFrame is used to combine titles and comments. 
@@ -46,7 +46,7 @@ This stage involves several cleaning and processing steps:
 > - **Duplicate Removal**: Removal of duplicate comments reduces the dataset's size.
 > - **URL Removal**: Comments containing "http" or "www" are removed.
 > - **Text Length Filtering**: Comments and titles below or above specified quantiles are removed to control the data's quality.
-> - **Sampling**: Comments are sampled according to log count percentage to mitigate imbalance.
+> - **Log Sampling**: Comments are sampled according to log count percentage to mitigate imbalance.
 > - **Special Characters Handling**: Unwanted punctuation and spaces are cleaned.
 > - **YouTube Names Masking**: YouTube channel names are masked to a common identifier.
 > - **Text Concatanation** : Video titles and comments are combined for further processing(i.e. [title;comment]).
@@ -55,6 +55,12 @@ This stage involves several cleaning and processing steps:
 The data is prepared for Topic Modeling through the BERTopic library. The UMAP model is configured for dimension reduction, and CountVectorizer for text vectorization. The BERTopic model is then initialized, and topic modeling is performed using specified sentence embeddings. Visualization of topics and barcharts is also provided.
 
 BERTopic modeling is conducted using specified UMAP and CountVectorizer models, followed by visualization of the results.
+```
+youtube_model.visualize_topics()
+youtube_model.visualize_documents(docs, embeddings=embeddings)
+youtube_model.visualize_barchart(top_n_topics=30)
+```
+
 
 more inforamtion : [BERTopic Official Page](https://maartengr.github.io/BERTopic/index.html)
 
