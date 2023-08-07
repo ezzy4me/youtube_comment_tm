@@ -2,7 +2,7 @@
 - [ ] eidtting now.
 - [ ] read me
 - [x] step1. annotation
-- [ ] step2&3. annotation
+- [x] step2&3. annotation
       
 This is example Coalab code for youtube comment crawling topic modeling.
 
