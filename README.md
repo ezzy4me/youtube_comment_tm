@@ -1,8 +1,8 @@
 # YouTube Comments Topic Modeling 🚩
 
-This is example Coalab code for youtube comment crawling topic modeling.
+This is code for youtube comment crawling topic modeling.
 
-This example aims to crwal YouTube comments, load them from CSV files, preprocess the data, and conduct Topic Modeling using BERTopic. 
+This code aims to crwal YouTube comments, load them from CSV files, preprocess the data, and conduct Topic Modeling using BERTopic. 
 
 We conducted on subject 'living alone' youtuber. It primarily includes the following stages:
 
