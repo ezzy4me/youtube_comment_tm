@@ -10,6 +10,10 @@ We conducted on subject 'living alone' youtuber. It primarily includes the follo
 - Google colabatory account : https://colab.research.google.com/
 - Google Play Developer API key : https://developers.google.com/android-publisher/getting_started
 
+## Raw Dataset
+- eng_comment_rawdata.csv.zip
+- korean_comment_rawdata.csv
+
 ## Dependencies
 > Pandas : 1.5.3
 > 
